@@ -10450,4 +10450,8 @@ textarea.form-control-lg {
   height: 85%;
   z-index: -1;
   border-bottom-right-radius: 35%;
+}
+
+.targetas img {
+  width: 6rem;
 }/*# sourceMappingURL=main.css.map */
