@@ -1,0 +1,48 @@
+$primary: #5265E1;
+$secondary: #FA5959;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary
+);
+
+$btn-secondary-link-hover-color:$primary;
+
+
+$font-family-sans-serif: 'Ubuntu', sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//Ejercicio 1
+
+.primerNav a {//letras navegador superior
+    letter-spacing: 0.16rem;
+    font-weight:700;
+}
+
+.aside {
+    position: relative;
+}
+
+
+
+.imagenes {
+    position: relative;
+    z-index: 1;
+}
+
+
+.imagenes:before {
+
+    position: absolute;
+    content: "";
+    background-color: $primary;
+    right: -50px;
+    top: 25%;
+    width: 85%;
+    height: 75%;
+    z-index: -1;
+    border-bottom-left-radius: 35%;
+}
+
+
