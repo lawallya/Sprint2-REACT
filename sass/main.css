@@ -10430,4 +10430,24 @@ textarea.form-control-lg {
   height: 75%;
   z-index: -1;
   border-bottom-left-radius: 35%;
+}
+
+.nav-tab .nav-item .nav-link:active {
+  border-bottom: #FA5959 solid 2rem;
+}
+
+.imgTab img {
+  left: 150px;
+}
+
+.fondoTab {
+  position: absolute;
+  content: "";
+  background-color: #5265E1;
+  left: -50px;
+  top: 3rem;
+  width: 80%;
+  height: 85%;
+  z-index: -1;
+  border-bottom-right-radius: 35%;
 }/*# sourceMappingURL=main.css.map */
