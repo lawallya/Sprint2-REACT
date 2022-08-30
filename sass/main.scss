@@ -77,4 +77,32 @@ $card-height:100%;
     width:6rem;
 }
 
+//EJERCICIO 6. Nivel 3
+.nav-link:hover,
+.accordion-button:hover {
+	color: $secondary;
+}
+
+.nav-tabs .nav-link:hover{
+    color:$secondary;
+   //ESTE NO SE APLICA, NO SE PORQUE
+}
+
+.nav-tab .nav-item .nav-link:active{
+    border-bottom: 0.25rem solid $secondary;
+}
+
+.btn-secondary:hover {//boton de los dos navegadores
+    color:$secondary !important;
+    border-color: $secondary;
+    background-color: white;
+}
+
+
+
+.btn-primary:hover{
+    background-color: white;
+    color:$primary;
+    border-color: $primary;
+}
 

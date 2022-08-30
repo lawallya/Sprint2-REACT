@@ -10454,4 +10454,29 @@ textarea.form-control-lg {
 
 .targetas img {
   width: 6rem;
+}
+
+.nav-link:hover,
+.accordion-button:hover {
+  color: #FA5959;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #FA5959;
+}
+
+.nav-tab .nav-item .nav-link:active {
+  border-bottom: 0.25rem solid #FA5959;
+}
+
+.btn-secondary:hover {
+  color: #FA5959 !important;
+  border-color: #FA5959;
+  background-color: white;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #5265E1;
+  border-color: #5265E1;
 }/*# sourceMappingURL=main.css.map */
