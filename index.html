@@ -312,9 +312,82 @@
             </div>
 
     </section>
+     <!--EJERCICIO 5. NIVEL 2. FOOTER-->
+       
+     <footer>
+        <div class="container text-bg-primary mt-3">
+            <div class="container-xl pt-4 pb-4">
+                <div class="row justify-content-center text-center">
+                    <div class="col-12 col-lg-6 mt-4 mt-lg-3 mb-4">
+                        <p class="text-uppercase p-footer mb-lg-4">35.000+ already joined</p>
+                        <h3 class="px-3 px-lg-4">Stay up-to-date with what we're doing</h3>
+                    </div>
+                </div>
+                <form class="row justify-content-center align-items-start text-center mx-4 rounded-2 gx-2  needs-validation mb-lg-4" novalidate>
+                    <div class="col-12 col-lg-4">
+                        <input type="email" class="form-control p-2" id="user-email" aria-describedby="emailHelp" placeholder="Enter your e-mail address" required>
+                        <div class="invalid-feedback text-light bg-danger rounded-bottom mt-0 p-2 text-start">
+                        Enter a valid e-mail
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2 mb-3 mb-lg-0 mt-3 mt-lg-0">
+                        <button type="submit" class="btn btn-secondary w-100 text-white p-2">Contact Us</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- navBar footer -->
+        <div class="container bg-dark " id="footer">
+            <div class="container-xl pt-4 pt-lg-2 pb-4 pb-lg-2">
+                <ul class="nav flex-column flex-lg-row align-items-center text-uppercase text-white py-3 ms-lg-5 ">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#">
+                        
+                        <img src="Imagenes/logo-bookmark.svg" alt="logo Bookmark" height="20" class="mb-lg-1"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white mt-4 mt-lg-0 ms-lg-5" href="#features">features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white mt-3 mb-3 mt-lg-0 mb-lg-0" href="#">pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white mb-4 mb-lg-0" href="contact">contact</a>
+                    </li>
+                    <li class="nav-item mt-2 mt-lg-0 mb-lg-2 ms-lg-auto me-lg-5">
+                        <a class="nav-link d-inline ps-0 pe-3 pe-lg-2" href="#"><img src="Imagenes/icon-facebook.svg" alt="facebook-icon" height="19"  target=”_blank”></a>
+                        <a class="nav-link d-inline ps-3 pe-lg-2 pe-0" href="#"><img src="Imagenes/icon-twitter.svg" alt="twitter-icon" height="18"  target=”_blank”></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+  
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+    </script>
 
 
 </body>
